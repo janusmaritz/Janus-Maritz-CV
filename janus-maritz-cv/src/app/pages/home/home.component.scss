@@ -1,0 +1,33 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem; // more space
+
+  h1 {
+    margin-top: 2rem;
+    font-size: 3rem; // was 2rem
+    font-weight: 600;
+  }
+
+  p {
+    margin: 1rem 0 2rem;
+    font-size: 1.4rem; // was 1.1rem
+    color: #444;
+  }
+
+  .profile {
+    width: 200px; // was 150px
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #aaa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  app-button {
+    margin-top: 2rem;
+    transform: scale(1.1); // subtle scale up
+  }
+}
