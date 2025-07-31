@@ -2,7 +2,7 @@
   background-color: #0f0f0f;
   color: #ffffff;
   min-height: 100vh;
-  padding: 20px;                 // reduce padding to maximize space
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,14 +10,14 @@
 
 .home-card {
   background-color: #1a1a1a;
-  padding: 60px 40px;           // increase padding for a spacious card
+  padding: 60px 40px;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
   text-align: center;
-  max-width: 90vw;              // nearly full viewport width
+  max-width: 90vw;
   width: 100%;
-  max-height: 90vh;             // limit height to viewport height
-  overflow-y: auto;             // allow scrolling if content overflows
+  max-height: 90vh;
+  overflow-y: auto;
   transition: box-shadow 0.3s ease;
 }
 
@@ -26,9 +26,9 @@
 }
 
 .profile-img {
-  width: 40vw;                  // responsive width (~40% viewport width)
-  height: 40vw;                 // keep square shape
-  max-width: 400px;             // cap max size for large screens
+  width: 40vw;
+  height: 40vw;
+  max-width: 400px;
   max-height: 400px;
   object-fit: cover;
   border-radius: 50%;
@@ -37,8 +37,8 @@
 }
 
 .home-title {
-  font-size: 4vw;               // responsive font size
-  max-font-size: 48px;          // cap max size
+  font-size: 4vw;
+  max-font-size: 48px;
   margin-bottom: 10px;
   color: #00ffff;
 }
