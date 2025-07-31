@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Angular",
+    "description": "Frontend framework for building SPAs",
+    "level": 70
+  },
+  {
+    "name": "C# / .NET",
+    "description": "Backend services and API development",
+    "level": 70
+  },
+  {
+    "name": "SQL",
+    "description": "Writing queries, managing relational data",
+    "level": 70
+  },
+  {
+    "name": "HTML / CSS",
+    "description": "Semantic markup and responsive styling",
+    "level": 80
+  },
+  {
+    "name": "JavaScript / TypeScript",
+    "description": "Core logic, ES6+, async code",
+    "level": 70
+  },
+  {
+    "name": "Git",
+    "description": "Version control, branching, merge strategies",
+    "level": 80
+  }
+]
