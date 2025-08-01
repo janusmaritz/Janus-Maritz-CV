@@ -10,5 +10,5 @@ import { NavComponent } from './shared/components/navigation/navigation.componen
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'janus-maritz-cv';
+  title = 'Janus-Maritz-CV';
 }
