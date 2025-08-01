@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "janus-maritz-cv": {
+    "Janus-Maritz-CV": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/janus-maritz-cv",
+            "outputPath": "dist/Janus-Maritz-CV",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "janus-maritz-cv:build:production"
+              "buildTarget": "Janus-Maritz-CV:build:production"
             },
             "development": {
-              "buildTarget": "janus-maritz-cv:build:development"
+              "buildTarget": "Janus-Maritz-CV:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "janus-maritz-cv:build"
+            "buildTarget": "Janus-Maritz-CV:build"
           }
         },
         "test": {

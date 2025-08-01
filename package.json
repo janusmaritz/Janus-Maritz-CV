@@ -1,5 +1,5 @@
 {
-  "name": "janus-maritz-cv",
+  "name": "Janus-Maritz-CV",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:janus-maritz-cv": "node dist/janus-maritz-cv/server/server.mjs"
+    "serve:ssr:Janus-Maritz-CV": "node dist/Janus-Maritz-CV/server/server.mjs"
   },
   "private": true,
   "dependencies": {

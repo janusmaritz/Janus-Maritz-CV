@@ -17,6 +17,4 @@ import { ButtonComponent } from '../../shared/components/button/button.component
   ],
   imports: [ButtonComponent]
 })
-export class HomeComponent {
-  
-}
+export class HomeComponent {}
