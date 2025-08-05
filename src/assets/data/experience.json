@@ -1,0 +1,16 @@
+[
+  {
+    "company": "1Nebula",
+    "role": "Junior Analyst Developer",
+    "duration": "Aug 2024 - Present",
+    "description": "Building Azure cloud solutions using Angular and .NET",
+    "technologies": "Angular, .NET, Azure, SQL, DevOps"
+  },
+  {
+    "company": "1Nebula",
+    "role": "Software Support Engineer",
+    "duration": "Oct 2022 - Aug 2024",
+    "description": "Worked on a Serivce Desk supporting clients with cloud solutions",
+    "technologies": "JIRA, SQL, Python, Azure"
+  }
+]
