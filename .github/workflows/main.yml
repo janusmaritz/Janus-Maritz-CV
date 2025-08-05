@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Angular
-        run: npm run build -- --output-path=docs --base-href=/Janus-Maritz-CV/
+      - name: Build Angular (Production)
+        run: ng build --configuration production --output-path=docs --base-href=/Janus-Maritz-CV/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
