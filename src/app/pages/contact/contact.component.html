@@ -1,0 +1,8 @@
+<section class="contact-section" *ngIf="contactItems.length">
+  <h2>Contact</h2>
+
+  <div class="contact-item" *ngFor="let item of contactItems">
+    <i [class]="item.iconClass + ' icon'"></i>
+    <a [href]="item.link" [attr.target]="item.label === 'LinkedIn' ? '_blank' : null" [attr.rel]="item.label === 'LinkedIn' ? 'noopener noreferrer' : null">{{ item.value }}</a>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+[
+  {
+    "label": "Email",
+    "value": "janusmaritz7@gmail.com",
+    "iconClass": "fas fa-envelope",
+    "link": "mailto:janusmaritz7@gmail.com"
+  },
+  {
+    "label": "Phone",
+    "value": "+2776 160 3036",
+    "iconClass": "fas fa-phone",
+    "link": "tel:+27761603036"
+  },
+  {
+    "label": "LinkedIn",
+    "value": "www.linkedin.com/in/janus-maritz",
+    "iconClass": "fab fa-linkedin",
+    "link": "https://www.linkedin.com/in/janus-maritz"
+  }
+]
