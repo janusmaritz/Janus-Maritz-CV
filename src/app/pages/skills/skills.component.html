@@ -3,7 +3,10 @@
 
   <div class="skills-grid">
     <div class="skill-card" *ngFor="let skill of skills">
-      <h3 class="skill-name">{{ skill.name }}</h3>
+      <h3 class="skill-name">
+        <i [class]="getIconClass(skill.name) + ' skill-icon'"></i>
+        {{ skill.name }}
+      </h3>
       <p class="skill-description">{{ skill.description }}</p>
       <div class="progress-bar">
         <div class="progress-fill" [style.width]="skill.level + '%'"></div>

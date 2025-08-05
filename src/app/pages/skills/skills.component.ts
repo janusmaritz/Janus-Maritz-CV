@@ -34,4 +34,17 @@ export class SkillsComponent implements OnInit {
       this.skills = data;
     });
   }
+
+  getIconClass(skillName: string): string {
+    const iconMap: Record<string, string> = {
+      'Angular': 'fab fa-angular',
+      'C# / .NET': 'fas fa-code',
+      'SQL': 'fas fa-database',
+      'HTML / CSS': 'fab fa-html5',
+      'JavaScript / TypeScript': 'fab fa-js',
+      'Git': 'fab fa-git-alt'
+    };
+
+    return iconMap[skillName] || 'fas fa-tools';
+  }
 }
