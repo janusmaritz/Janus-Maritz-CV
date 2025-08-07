@@ -3,9 +3,10 @@ section {
   color: white;
 
   h2 {
-    border-bottom: 2px solid #00ff2a;
-    display: inline-block;
-    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px
   }
 
   .skill-card {
@@ -28,7 +29,7 @@ section {
       overflow: hidden;
 
       .progress-fill {
-        background: #00ff2a;
+        background: #42774c;
         height: 100%;
         border-radius: 10px;
       }
@@ -36,7 +37,7 @@ section {
 
     .skill-icon {
       margin-right: 0.5rem;
-      color: #00ff2a;
+      color: #42774c;
       font-size: 1.2rem;
       vertical-align: middle;
     }

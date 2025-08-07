@@ -4,11 +4,11 @@
   padding: 60px 20px;
   min-height: 100vh;
 
-  .experience-title {
-    font-size: 2rem;
-    border-bottom: 2px solid #00ffff;
-    display: inline-block;
-    margin-bottom: 2rem;
+  h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px
   }
 
   .experience-list {
@@ -21,15 +21,15 @@
     background-color: #1a1a1a;
     padding: 1.5rem;
     border-radius: 1rem;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 10px #42774c;
     transition: 0.3s ease-in-out;
 
     &:hover {
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+      box-shadow: 0 0 20px #00ff2a;
     }
 
     .company {
-      color: #00ffff;
+      color: #42774c;
       font-size: 1.25rem;
     }
 
