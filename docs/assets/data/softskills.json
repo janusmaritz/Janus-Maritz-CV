@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Communication",
+    "description": "Communicating with team members and clients",
+    "level": 90
+  },
+  {
+    "name": "Time Management",
+    "description": "Managing time to ensure tasks are completed on time",
+    "level": 80
+  },
+  {
+    "name": "Adaptability",
+    "description": "Adapt fast to changing conditions and new challenges",
+    "level": 80
+  },
+  {
+    "name": "Teamwork",
+    "description": "Teamwork makes the dream work",
+    "level": 100
+  },
+  {
+    "name": "Problem solving",
+    "description": "Find new and innovative solutions for problems",
+    "level": 80
+  },
+  {
+    "name": "Active Listening",
+    "description": "Listening is just as important, if not more important than communication",
+    "level": 90
+  }
+]

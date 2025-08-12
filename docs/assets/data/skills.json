@@ -10,6 +10,11 @@
     "level": 70
   },
   {
+    "name": "Azure",
+    "description": "Cloud Development",
+    "level": 70
+  },
+  {
     "name": "SQL",
     "description": "Writing queries, managing relational data",
     "level": 70
