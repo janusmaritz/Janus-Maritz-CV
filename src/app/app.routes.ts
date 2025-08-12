@@ -12,9 +12,14 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
   },
   {
-    path: 'skills',
-    title: 'Skills - Janus Maritz',
+    path: 'skills/technical',
+    title: 'Technical Skills - Janus Maritz',
     loadComponent: () => import('./pages/skills/skills.component').then(m => m.SkillsComponent)
+  },
+   {
+    path: 'skills/soft',
+    title: 'Soft Skills - Janus Maritz',
+    loadComponent: () => import('./pages/soft-skills/soft-skills.component').then(m => m.SoftSkillsComponent)
   },
   {
     path: 'experience',

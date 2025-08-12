@@ -1,0 +1,19 @@
+<div class="dropdown"
+     (mouseenter)="openDropdown()"
+     (mouseleave)="closeDropdown()">
+  
+  <div class="dropdown-btn" (click)="toggleDropdown()">
+    {{ label }}
+    <i
+      class="fas fa-chevron-down arrow"
+      [class.open]="isOpen"
+      aria-hidden="true"
+    ></i>
+  </div>
+
+  <ul class="dropdown-menu" *ngIf="isOpen">
+    <li *ngFor="let item of items">
+      <a [routerLink]="item.link" (click)="closeDropdown()">{{ item.label }}</a>
+    </li>
+  </ul>
+</div>
