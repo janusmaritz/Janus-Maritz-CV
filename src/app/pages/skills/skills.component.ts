@@ -39,6 +39,7 @@ export class SkillsComponent implements OnInit {
     const iconMap: Record<string, string> = {
       'Angular': 'fab fa-angular',
       'C# / .NET': 'fas fa-code',
+      'Azure': 'fas fa-cloud',
       'SQL': 'fas fa-database',
       'HTML / CSS': 'fab fa-html5',
       'JavaScript / TypeScript': 'fab fa-js',
