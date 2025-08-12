@@ -11,7 +11,7 @@
 
   .logo {
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 1.50rem;
     color: #42774c;
     letter-spacing: 1px;
     white-space: nowrap;
@@ -21,16 +21,20 @@
     list-style: none;
     display: flex;
     gap: 2rem;
-    overflow-x: auto;
+    overflow: visible; /* allow dropdowns to show outside */
     white-space: nowrap;
     padding: 0;
     margin: 0;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    li {
+      position: relative; /* anchor dropdown menus */
+    }
   }
 
   .nav-links::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+    display: none;
   }
 
   .nav-links li a {
@@ -39,19 +43,6 @@
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
-
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-      width: 100%;
-      height: 2px;
-      background: #00ffc8;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.3s ease;
-    }
 
     &:hover {
       color: #00ff2a;
