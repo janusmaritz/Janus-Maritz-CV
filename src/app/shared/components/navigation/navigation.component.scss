@@ -21,15 +21,14 @@
     list-style: none;
     display: flex;
     gap: 2rem;
-    overflow: visible; /* allow dropdowns to show outside */
+    overflow: visible;
     white-space: nowrap;
     padding: 0;
     margin: 0;
     scrollbar-width: none;
-    -ms-overflow-style: none;
 
     li {
-      position: relative; /* anchor dropdown menus */
+      position: relative;
     }
   }
 
