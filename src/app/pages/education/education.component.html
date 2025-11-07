@@ -1,0 +1,20 @@
+<section class="education-section">
+    <h2 class="education-title">Education</h2>
+    <div class="education-list">
+        <div class="education-card" *ngFor="let item of education">
+            <h3 class="institution">{{ item.institution }}</h3>
+            <p class="period">{{ item.period }}</p>
+            <p class="degree">{{ item.degree }}</p>
+            <p class="description">{{ item.description }}</p>
+        </div>
+    </div>
+    <h2 class="certificate-title">Certificates</h2>
+     <div class="certificate-list">
+        <div class="certificate-card" *ngFor="let item of certificate">
+            <h3 class="institution">{{ item.institution }}</h3>
+            <p class="certificate">{{ item.certificate }}</p>
+            <p class="obtained">{{ item.obtained }}</p>
+            <p class="about">{{ item.about }}</p>
+        </div>
+    </div>
+</section>
