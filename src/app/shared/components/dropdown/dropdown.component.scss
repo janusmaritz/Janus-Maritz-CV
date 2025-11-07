@@ -8,12 +8,12 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  color: #42774c; /* match nav link color */
+  color: #42774c;
 }
 
 .arrow {
   transition: transform 0.2s ease;
-  font-size: 0.75rem; /* adjust size as needed */
+  font-size: 0.75rem;
   margin-left: 5px;
   display: inline-block;
 }
