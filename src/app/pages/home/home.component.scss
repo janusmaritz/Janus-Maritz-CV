@@ -38,16 +38,38 @@
 
 .home-title {
   font-size: 4vw;
-  max-font-size: 48px;
   margin-bottom: 10px;
   color: #42774c;
 }
 
 .home-subtitle {
   font-size: 2vw;
-  max-font-size: 24px;
   color: #cccccc;
   margin-bottom: 20px;
+}
+
+.pressable-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  box-shadow: 0 5px 0 #0056b3; 
+  
+  transition: all 0.1s ease-in-out;
+  
+  position: relative;
+  top: 0;
+}
+
+.pressable-button:active {
+  transform: translateY(5px);
+  
+  box-shadow: none; 
 }
 
 @media (max-width: 768px) {
