@@ -17,4 +17,22 @@ import { ButtonComponent } from '../../shared/components/button/button.component
   ],
   imports: [ButtonComponent]
 })
-export class HomeComponent {}
+export class HomeComponent {
+
+  downloadCV() {
+    const filePath = 'assets/documents/JanusMaritzResume.pdf';
+
+    const fileName = 'JanusMaritz_CV.pdf';
+
+    const a = document.createElement('a');
+
+    a.href = filePath;
+    a.download = fileName;
+
+    document.body.appendChild(a);
+
+    a.click();
+
+    document.body.removeChild(a);
+  }
+}
