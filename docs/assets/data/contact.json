@@ -16,5 +16,11 @@
     "value": "www.linkedin.com/in/janus-maritz",
     "iconClass": "fab fa-linkedin",
     "link": "https://www.linkedin.com/in/janus-maritz"
+  },
+  {
+    "label": "GitHub",
+    "value": "github.com/janusmaritz",
+    "iconClass": "fab fa-github",
+    "link": "https://github.com/janusmaritz"
   }
 ]
