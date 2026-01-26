@@ -1,21 +1,38 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
 .dropdown-btn {
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 4px;
-  color: #42774c;
+  justify-content: space-between;
+  gap: 8px;
+  
+  font-family: var(--font-main);
+  color: var(--secondary-text);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  user-select: none;
+
+  width: 100%; 
+}
+
+.dropdown-btn:hover,
+.dropdown-btn.active {
+  color: var(--amp-text);
 }
 
 .arrow {
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
   font-size: 0.75rem;
-  margin-left: 5px;
-  display: inline-block;
+  color: var(--secondary-text);
+}
+
+.dropdown-btn:hover .arrow {
+  color: var(--amp-text);
 }
 
 .arrow.open {
@@ -26,24 +43,71 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: #0e0e0e;
-  border: 1px solid #222;
-  border-radius: 10px;
-  list-style: none;
-  margin: 0;
-  padding: 0.5rem 0;
   min-width: 180px;
   z-index: 1000;
+  
+  background: var(--secondary-color);
+  border: 1px solid var(--color-parchment);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  
+  border-radius: 10px;
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0.5rem 0;
+  
+  animation: fadeIn 0.2s ease-out;
 }
 
 .dropdown-menu li a {
   display: block;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #42774c;
+  color: var(--secondary-text);
+  font-family: var(--font-main);
+  transition: all 0.2s ease;
 }
 
 .dropdown-menu li a:hover {
-  background: rgba(0, 255, 170, 0.05);
-  color: #00ff2a;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--amp-text);
+  padding-left: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-btn {
+    justify-content: center;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  .dropdown-menu {
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+    margin-top: 0;
+    padding: 0;
+  }
+  
+  .dropdown-menu li a {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
