@@ -1,0 +1,28 @@
+:root {
+  /* --- Main Theme (Slate) --- */
+  --primary-color: #0f172a;    /* Slate 900: Main background */
+  --secondary-color: #1e293b;  /* Slate 800: Section backgrounds/Navbar */
+  --color-parchment: #334155;  /* Slate 700: Borders or lighter cards */
+  
+  /* --- Typography --- */
+  --primary-text: #f8fafc;     /* Slate 50: Headings (High Contrast) */
+  --secondary-text: #94a3b8;   /* Slate 400: Body text (Softer for reading) */
+  --amp-text: #38bdf8;         /* Sky 400: Links, icons, and highlights */
+  --font-main: 'Inter', sans-serif;
+
+  /* --- Buttons & Interactive --- */
+  /* Primary Button (Solid color) */
+  --btn-primary-bg: #38bdf8;
+  --btn-primary-text: #0f172a; /* Dark text on bright button for readability */
+  --btn-primary-hover: #0ea5e9; /* Sky 500: Slightly darker interaction */
+
+  /* Secondary Button (Outline/Ghost) */
+  --btn-secondary-bg: transparent;
+  --btn-secondary-border: #334155;
+  --btn-secondary-text: #f8fafc;
+  --btn-secondary-hover-bg: #1e293b;
+
+  /* --- Utilities --- */
+  --border-subtle: #1e293b;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
