@@ -1,19 +1,70 @@
-.app-wrapper {
-  min-height: 100vh;
-  background-color: #0e0e0e;
+@import './styles/_vars.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-  font-family: 'Orbitron', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #0e0e0e;
-  color: #ccc;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  
+  font-family: var(--font-main, 'Orbitron', sans-serif); 
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
+  
   .container {
     flex-direction: column;
   }
-}
+  
+  .home-card {
+    padding: 30px 20px !important;
+    width: 95vw !important;
+    max-width: 100%;
+    max-height: 80vh;              
+    margin: 0 auto;
+  }
 
+  .home-title { font-size: 2.5rem; }
+  .home-subtitle { font-size: 1.2rem; }
+
+  .profile-img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .experience-section, .education-section, .contact-section, .skills-section, .soft-skills-section {
+    padding: 40px 15px !important;
+  }
+
+  .experience-card, .education-card, .certificate-card, .contact-item, .skill-card {
+    padding: 1.25rem !important;
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .contact-item .icon {
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
+}

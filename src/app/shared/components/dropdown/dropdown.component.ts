@@ -1,5 +1,5 @@
+import { Component, Input, ElementRef, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -14,15 +14,20 @@ export class DropdownComponent {
   @Input() items: { label: string; link: string }[] = [];
   isOpen = false;
 
-  openDropdown() {
-    this.isOpen = true;
+  constructor(private eRef: ElementRef) {}
+
+  toggleDropdown() {
+    this.isOpen = !this.isOpen;
   }
 
   closeDropdown() {
     this.isOpen = false;
   }
 
-  toggleDropdown() {
-    this.isOpen = !this.isOpen;
+  @HostListener('document:click', ['$event'])
+  clickout(event: Event) {
+    if (!this.eRef.nativeElement.contains(event.target)) {
+      this.isOpen = false;
+    }
   }
 }
