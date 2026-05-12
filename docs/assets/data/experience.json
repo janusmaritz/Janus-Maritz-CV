@@ -2,15 +2,26 @@
   {
     "company": "1Nebula",
     "role": "Junior Analyst Developer",
-    "duration": "Aug 2024 - Present",
-    "description": "Building Azure cloud solutions using Angular and .NET",
-    "technologies": "Angular, .NET, Azure, SQL, DevOps"
+    "duration": "2024 - Present",
+    "responsibilities": [
+      { "focus": "Full-Stack", "detail": "Developed responsive cloud apps with Angular and C#/.NET." },
+      { "focus": "DevOps", "detail": "Managed Azure CI/CD pipelines using Bicep and YAML automation." },
+      { "focus": "Data", "detail": "Authored optimized SQL and managed Snowflake data warehouses." },
+      { "focus": "Agile", "detail": "Contributed to all SDLC phases, from sprint planning to retrospectives." },
+      { "focus": "Support", "detail": "Resolved complex Azure cloud issues to improve performance and uptime." }
+    ],
+    "technologies": ["Angular", "C# / .NET", "Azure DevOps", "Bicep", "YAML", "SQL", "Snowflake"]
   },
   {
     "company": "1Nebula",
     "role": "Software Support Engineer",
-    "duration": "Oct 2022 - Aug 2024",
-    "description": "Worked on a Serivce Desk supporting clients with cloud solutions",
-    "technologies": "JIRA, SQL, Python, Azure"
+    "duration": "2022 - 2024",
+    "responsibilities": [
+      { "focus": "Cloud Support", "detail": "Diagnosed and resolved global Azure cloud environment issues as Tier 2 support." },
+      { "focus": "Data Investigation", "detail": "Leveraged SQL to extract reports and identify critical data inconsistencies." },
+      { "focus": "Process Automation", "detail": "Reduced manual effort by building Python scripts for routine support tasks." },
+      { "focus": "Incident Tracking", "detail": "Managed bug escalations and cross-team collaboration to meet all SLAs." }
+    ],
+    "technologies": ["Azure", "SQL", "Python", "Technical Troubleshooting"]
   }
 ]
