@@ -1,13 +1,26 @@
-<section class="experience-section">
+<section class="experience-section" [@fadeIn]>
   <h2 class="experience-title">Experience</h2>
 
   <div class="experience-list">
     <div class="experience-card" *ngFor="let item of experiences">
-      <h3 class="company">{{ item.company }}</h3>
+      
+      <div class="card-header">
+        <h3 class="company">{{ item.company }}</h3>
+        <span class="duration">{{ item.duration }}</span>
+      </div>
+      
       <p class="role">{{ item.role }}</p>
-      <p class="duration">{{ item.duration }}</p>
-      <p class="description">{{ item.description }}</p>
-      <p class="technologies">{{ item.technologies}}</p>
+
+      <ul class="responsibilities-list">
+        <li *ngFor="let req of item.responsibilities">
+          <strong>{{ req.focus }}:</strong> {{ req.detail }}
+        </li>
+      </ul>
+
+      <div class="tech-tags" *ngIf="item.technologies && item.technologies.length > 0">
+        <span class="tech-tag" *ngFor="let tech of item.technologies">{{ tech }}</span>
+      </div>
+
     </div>
   </div>
 </section>

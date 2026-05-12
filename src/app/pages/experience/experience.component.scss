@@ -23,7 +23,7 @@
 
   .experience-card {
     background-color: var(--secondary-color);
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 1rem;
     
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
@@ -37,35 +37,95 @@
       transform: translateY(-2px);
     }
 
-    .company {
-      color: var(--amp-text);
-      font-size: 1.25rem;
-      font-weight: 700;
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
       margin-bottom: 0.25rem;
+
+      .company {
+        color: var(--amp-text);
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .duration {
+        color: var(--secondary-text);
+        font-size: 0.95rem;
+        font-style: italic;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+      }
     }
 
     .role {
       color: var(--primary-text);
       font-weight: 600;
+      font-size: 1.1rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
     }
 
-    .duration {
+    .responsibilities-list {
+      margin: 0 0 1.5rem 0;
+      padding-left: 1.2rem;
       color: var(--secondary-text);
-      font-size: 0.9rem;
-      font-style: italic;
-      margin-bottom: 1rem;
-      display: block;
+
+      li {
+        line-height: 1.6;
+        margin-bottom: 0.6rem;
+        
+        strong {
+          color: var(--primary-text);
+        }
+
+        &::marker {
+          color: var(--amp-text);
+        }
+      }
     }
 
-    .description {
-      margin-top: 0.5rem;
-      color: var(--secondary-text);
-      line-height: 1.6;
+    /* Technology Tags */
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tech-tag {
+      background: rgba(56, 189, 248, 0.1); 
+      color: var(--amp-text);
+      border: 1px solid var(--amp-text);
+      padding: 0.3rem 0.7rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background: var(--amp-text);
+        color: var(--primary-color);
+        box-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+      }
     }
   }
 }
 
 @media (max-width: 768px) {
+  .experience-card {
+    .card-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;

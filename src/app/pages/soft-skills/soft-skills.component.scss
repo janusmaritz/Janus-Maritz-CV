@@ -12,6 +12,14 @@ section.soft-skills-section {
     color: var(--primary-text);
   }
 
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .skill-card {
     background: var(--secondary-color);
     border-radius: 1rem;
@@ -30,26 +38,10 @@ section.soft-skills-section {
       transform: translateY(-2px);
     }
     
-    h3, span {
-        color: var(--primary-text);
-        font-weight: 600;
-    }
-
-    .progress-bar {
-      background: var(--color-parchment);
-      border-radius: 10px;
-      height: 10px;
-      overflow: hidden;
-      margin-top: 10px;
-
-      .progress-fill {
-        background: var(--amp-text);
-        height: 100%;
-        border-radius: 10px;
-        
-        box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
-        transition: width 1s ease-in-out;
-      }
+    h3 {
+      color: var(--primary-text);
+      font-weight: 600;
+      margin-bottom: 0.8rem;
     }
 
     .skill-icon {
@@ -57,8 +49,14 @@ section.soft-skills-section {
       color: var(--amp-text);
       font-size: 1.2rem;
       vertical-align: middle;
-      
       text-shadow: 0 0 5px rgba(56, 189, 248, 0.4);
+    }
+
+    .skill-description {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.8); /* Slightly muted for better hierarchy */
+      margin: 0;
     }
   }
 }

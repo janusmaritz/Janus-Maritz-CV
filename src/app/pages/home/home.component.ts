@@ -1,5 +1,6 @@
 import { trigger, transition, style, animate } from '@angular/animations';
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ButtonComponent } from '../../shared/components/button/button.component';
 
 @Component({
@@ -15,24 +16,29 @@ import { ButtonComponent } from '../../shared/components/button/button.component
       ])
     ])
   ],
-  imports: [ButtonComponent]
+  imports: [CommonModule, ButtonComponent]
 })
 export class HomeComponent {
 
+  // Added areas of familiarity here for clean HTML rendering
+  areasOfFamiliarity: string[] = [
+    'Full-Stack Development', 
+    'Cloud Operations', 
+    'DevOps Integration', 
+    'Data Handling', 
+    'Agile Methodology', 
+    'Support'
+  ];
+
   downloadCV() {
-    const filePath = 'assets/documents/JanusMaritzResume.pdf';
-
-    const fileName = 'JanusMaritz_CV.pdf';
-
+    const filePath = 'assets/documents/Janus_Resume.pdf';
+    const fileName = 'Janus_Resume.pdf';
     const a = document.createElement('a');
 
     a.href = filePath;
     a.download = fileName;
-
     document.body.appendChild(a);
-
     a.click();
-
     document.body.removeChild(a);
   }
 }

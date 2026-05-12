@@ -3,10 +3,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { animate, style, transition, trigger } from '@angular/animations';
 
-interface Skill {
-  name: string;
-  description: string;
-  level: number;
+interface SkillCategory {
+  category: string;
+  icon: string;
+  items: string[];
 }
 
 @Component({
@@ -25,27 +25,13 @@ interface Skill {
     ]
 })
 export class SkillsComponent implements OnInit {
-  skills: Skill[] = [];
+  skillCategories: SkillCategory[] = [];
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<Skill[]>('assets/data/skills.json').subscribe(data => {
-      this.skills = data;
+    this.http.get<SkillCategory[]>('assets/data/skills.json').subscribe(data => {
+      this.skillCategories = data;
     });
-  }
-
-  getIconClass(skillName: string): string {
-    const iconMap: Record<string, string> = {
-      'Angular': 'fab fa-angular',
-      'C# / .NET': 'fas fa-code',
-      'Azure': 'fas fa-cloud',
-      'SQL': 'fas fa-database',
-      'HTML / CSS': 'fab fa-html5',
-      'JavaScript / TypeScript': 'fab fa-js',
-      'Git': 'fab fa-git-alt'
-    };
-
-    return iconMap[skillName] || 'fas fa-tools';
   }
 }

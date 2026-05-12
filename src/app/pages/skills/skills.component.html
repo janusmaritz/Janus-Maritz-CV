@@ -1,15 +1,17 @@
-<section class="skills-section">
+<section class="skills-section" [@fadeIn]>
   <h2 class="skills-title">Technical Skills</h2>
 
   <div class="skills-grid">
-    <div class="skill-card" *ngFor="let skill of skills">
+    <div class="skill-card" *ngFor="let group of skillCategories">
       <h3 class="skill-name">
-        <i [class]="getIconClass(skill.name) + ' skill-icon'"></i>
-        {{ skill.name }}
+        <i [class]="group.icon + ' skill-icon'"></i>
+        {{ group.category }}
       </h3>
-      <p class="skill-description">{{ skill.description }}</p>
-      <div class="progress-bar">
-        <div class="progress-fill" [style.width]="skill.level + '%'"></div>
+      
+      <div class="skill-tags">
+        <span class="skill-tag" *ngFor="let item of group.items">
+          {{ item }}
+        </span>
       </div>
     </div>
   </div>

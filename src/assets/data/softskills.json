@@ -1,32 +1,32 @@
 [
   {
     "name": "Communication",
-    "description": "Communicating with team members and clients",
-    "level": 90
+    "icon": "fas fa-comments",
+    "description": "Articulating ideas clearly and collaborating effectively with team members and stakeholders."
   },
   {
     "name": "Time Management",
-    "description": "Managing time to ensure tasks are completed on time",
-    "level": 80
+    "icon": "fas fa-clock",
+    "description": "Prioritizing tasks and managing sprint deliverables efficiently."
   },
   {
     "name": "Adaptability",
-    "description": "Adapt fast to changing conditions and new challenges",
-    "level": 80
+    "icon": "fas fa-sync-alt",
+    "description": "Quickly learning new technologies and adjusting to shifting project requirements."
   },
   {
     "name": "Teamwork",
-    "description": "Teamwork makes the dream work",
-    "level": 100
+    "icon": "fas fa-users",
+    "description": "Fostering a positive, collaborative environment within Agile development squads."
   },
   {
-    "name": "Problem solving",
-    "description": "Find new and innovative solutions for problems",
-    "level": 80
+    "name": "Problem Solving",
+    "icon": "fas fa-lightbulb",
+    "description": "Analyzing complex technical issues and implementing robust, scalable solutions."
   },
   {
     "name": "Active Listening",
-    "description": "Listening is just as important, if not more important than communication",
-    "level": 90
+    "icon": "fas fa-headphones",
+    "description": "Ensuring full comprehension of user requirements and peer feedback before execution."
   }
 ]
