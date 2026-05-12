@@ -1,8 +1,19 @@
-<section class="home-section" @fadeIn>
+<section class="home-section" [@fadeIn]>
   <div class="home-card">
     <img src="assets/images/janusmaritz.jpg" alt="Profile photo" class="profile-img" />
     <h1 class="home-title">Hi, I'm Janus</h1>
     <p class="home-subtitle">Full Stack Developer — Angular & .NET</p>
+
+    <div class="home-content">
+      <p class="home-summary">
+        Full-Stack Developer with a BSc in IT and a background in Software Support. Experienced in developing cloud solutions using Angular, C#, and Azure. Capable of managing DevOps workflows with YAML and Bicep, and optimizing data through SQL and Snowflake. Focused on delivering reliable software within Agile environments while leveraging a strong foundation in technical troubleshooting.
+      </p>
+
+      <div class="familiarity-tags">
+        <span class="tag" *ngFor="let area of areasOfFamiliarity">{{ area }}</span>
+      </div>
+    </div>
+
     <app-button class="pressable-button" (click)="downloadCV()">Download CV</app-button>
   </div>
 </section>

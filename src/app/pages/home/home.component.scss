@@ -14,33 +14,31 @@
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
   text-align: center;
-  max-width: 90vw;
+  max-width: 800px; /* Constrained slightly so the text doesn't stretch too wide */
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   border: 1px solid var(--color-parchment);
-}
 
-.home-card:hover {
-  box-shadow: 0 0 40px rgba(56, 189, 248, 0.2); 
-  border-color: var(--amp-text);
+  &:hover {
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.2); 
+    border-color: var(--amp-text);
+  }
 }
 
 .profile-img {
-  width: 40vw;
-  height: 40vw;
-  max-width: 400px;
-  max-height: 400px;
+  width: 200px; /* Switched to fixed px for better scaling on larger screens */
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   border: 4px solid var(--amp-text); 
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
 }
 
 .home-title {
-  font-size: 4vw;
+  font-size: 3rem;
   margin-bottom: 10px;
   font-family: var(--font-main);
   color: var(--primary-text); 
@@ -48,13 +46,56 @@
 }
 
 .home-subtitle {
-  font-size: 2vw;
-  color: var(--secondary-text); 
+  font-size: 1.5rem;
+  color: var(--amp-text); /* Switched to amp-text to make your role pop */
   margin-bottom: 20px;
   font-family: var(--font-main);
+  font-weight: 600;
+}
+
+/* New Summary and Tags Styles */
+.home-content {
+  margin-bottom: 30px;
+}
+
+.home-summary {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--secondary-text);
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.familiarity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 20px;
+
+  .tag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-parchment);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--primary-text);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: rgba(56, 189, 248, 0.1);
+      border-color: var(--amp-text);
+      color: var(--amp-text);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+    }
+  }
 }
 
 @media (max-width: 768px) {
+  .home-card {
+    padding: 40px 20px;
+  }
+
   .home-title {
     font-size: 2rem;
   }
@@ -63,14 +104,24 @@
     font-size: 1.2rem;
   }
 
+  .home-summary {
+    font-size: 0.95rem;
+    padding: 0;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-  }
 
-  .navbar .nav-links {
-    width: 100%;
-    justify-content: flex-start;
-    gap: 1.5rem;
+    .nav-links {
+      width: 100%;
+      justify-content: flex-start;
+      gap: 1.5rem;
+    }
   }
 }

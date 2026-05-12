@@ -12,6 +12,14 @@ section.skills-section {
     color: var(--primary-text);
   }
 
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .skill-card {
     background: var(--secondary-color);
     border-radius: 1rem;
@@ -35,30 +43,36 @@ section.skills-section {
         font-weight: 600;
     }
 
-    .progress-bar {
-      background: var(--color-parchment);
-      border-radius: 10px;
-      height: 10px;
-      overflow: hidden;
-      margin-top: 10px;
-
-      .progress-fill {
-        background: var(--amp-text);
-        height: 100%;
-        border-radius: 10px;
-        
-        box-shadow: 0 0 10px rgba(56, 189, 248, 0.6); 
-        transition: width 1s ease-in-out;
-      }
-    }
-
     .skill-icon {
       margin-right: 0.5rem;
       color: var(--amp-text);
       font-size: 1.2rem;
       vertical-align: middle;
-      
       text-shadow: 0 0 5px rgba(56, 189, 248, 0.4);
+    }
+
+    /* New Tag Styles */
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    .skill-tag {
+      background: rgba(255, 255, 255, 0.05); /* Subtle dark mode background */
+      border: 1px solid var(--color-parchment);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background: var(--amp-text);
+        color: var(--primary-color);
+        border-color: var(--amp-text);
+        box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+      }
     }
   }
 }
