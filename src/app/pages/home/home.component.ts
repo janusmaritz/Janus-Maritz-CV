@@ -22,7 +22,7 @@ export class HomeComponent {
   downloadCV() {
     const filePath = 'assets/documents/JanusMaritzResume.pdf';
 
-    const fileName = 'JanusMaritz_CV.pdf';
+    const fileName = 'Janus_Resume.pdf';
 
     const a = document.createElement('a');
 
