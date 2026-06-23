@@ -1,0 +1,99 @@
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[2]!./src/styles/_vars.css ***!
+  \**************************************************************************************************************************************************************************************************************/
+:root {
+  /* --- Main Theme (Slate) --- */
+  --primary-color: #0f172a;    /* Slate 900: Main background */
+  --secondary-color: #1e293b;  /* Slate 800: Section backgrounds/Navbar */
+  --color-parchment: #334155;  /* Slate 700: Borders or lighter cards */
+  
+  /* --- Typography --- */
+  --primary-text: #f8fafc;     /* Slate 50: Headings (High Contrast) */
+  --secondary-text: #94a3b8;   /* Slate 400: Body text (Softer for reading) */
+  --amp-text: #34d399;         /* Emerald 400: Links, icons, and highlights */
+  --font-main: 'Inter', sans-serif;
+
+  /* --- Buttons & Interactive --- */
+  /* Primary Button (Solid color) */
+  --btn-primary-bg: #34d399;
+  --btn-primary-text: #0f172a; /* Dark text on bright button for readability */
+  --btn-primary-hover: #10b981; /* Emerald 500: Slightly darker interaction */
+
+  /* Secondary Button (Outline/Ghost) */
+  --btn-secondary-bg: transparent;
+  --btn-secondary-border: #334155;
+  --btn-secondary-text: #f8fafc;
+  --btn-secondary-hover-bg: #1e293b;
+
+  /* --- Utilities --- */
+  --border-subtle: #1e293b;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].rules[1].use[1]!./src/styles.scss?ngGlobalStyle ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: var(--font-main, "Orbitron", sans-serif);
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .home-card {
+    padding: 30px 20px !important;
+    width: 95vw !important;
+    max-width: 100%;
+    max-height: 80vh;
+    margin: 0 auto;
+  }
+  .home-title {
+    font-size: 2.5rem;
+  }
+  .home-subtitle {
+    font-size: 1.2rem;
+  }
+  .profile-img {
+    width: 50vw;
+    height: 50vw;
+  }
+  .experience-section, .education-section, .contact-section, .skills-section, .soft-skills-section {
+    padding: 40px 15px !important;
+  }
+  .experience-card, .education-card, .certificate-card, .contact-item, .skill-card {
+    padding: 1.25rem !important;
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .contact-item .icon {
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map*/

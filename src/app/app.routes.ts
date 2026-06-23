@@ -8,8 +8,8 @@ export const routes: Routes = [
   },
   {
     path: 'home',
-    title: 'Home - Janus Maritz',
-    loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
+    redirectTo: '',
+    pathMatch: 'full'
   },
   {
     path: 'skills/technical',

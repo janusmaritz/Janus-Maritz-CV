@@ -2,12 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { animate, style, transition, trigger } from '@angular/animations';
-
-interface SkillCategory {
-  category: string;
-  icon: string;
-  items: string[];
-}
+import { SkillCategory } from '../../models';
 
 @Component({
   selector: 'app-skills',
@@ -26,12 +21,14 @@ interface SkillCategory {
 })
 export class SkillsComponent implements OnInit {
   skillCategories: SkillCategory[] = [];
+  loadError = false;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<SkillCategory[]>('assets/data/skills.json').subscribe(data => {
-      this.skillCategories = data;
+    this.http.get<SkillCategory[]>('assets/data/skills.json').subscribe({
+      next: data => this.skillCategories = data,
+      error: () => this.loadError = true
     });
   }
 }
