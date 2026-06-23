@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Communication",
+    "icon": "fas fa-comments",
+    "description": "Articulating ideas clearly and collaborating effectively with team members and stakeholders."
+  },
+  {
+    "name": "Time Management",
+    "icon": "fas fa-clock",
+    "description": "Prioritizing tasks and managing sprint deliverables efficiently."
+  },
+  {
+    "name": "Adaptability",
+    "icon": "fas fa-sync-alt",
+    "description": "Quickly learning new technologies and adjusting to shifting project requirements."
+  },
+  {
+    "name": "Teamwork",
+    "icon": "fas fa-users",
+    "description": "Fostering a positive, collaborative environment within Agile development squads."
+  },
+  {
+    "name": "Problem Solving",
+    "icon": "fas fa-lightbulb",
+    "description": "Analyzing complex technical issues and implementing robust, scalable solutions."
+  },
+  {
+    "name": "Active Listening",
+    "icon": "fas fa-headphones",
+    "description": "Ensuring full comprehension of user requirements and peer feedback before execution."
+  }
+]

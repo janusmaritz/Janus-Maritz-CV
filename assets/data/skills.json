@@ -1,32 +1,22 @@
 [
   {
-    "name": "Angular",
-    "description": "Frontend framework for building SPAs",
-    "level": 70
+    "category": "Back-End & Database",
+    "icon": "fas fa-server",
+    "items": ["C# / .NET", "EF Core", "RESTful APIs", "Onion Architecture", "SQL (Efficient Querying)", "Snowflake"]
   },
   {
-    "name": "C# / .NET",
-    "description": "Backend services and API development",
-    "level": 70
+    "category": "Front-End Development",
+    "icon": "fas fa-desktop",
+    "items": ["Angular", "TypeScript / JavaScript", "HTML5 / CSS3"]
   },
   {
-    "name": "SQL",
-    "description": "Writing queries, managing relational data",
-    "level": 70
+    "category": "DevOps & Tools",
+    "icon": "fas fa-cogs",
+    "items": ["Azure DevOps", "CI/CD Pipelines", "YAML", "Git (Source Control)"]
   },
   {
-    "name": "HTML / CSS",
-    "description": "Semantic markup and responsive styling",
-    "level": 80
-  },
-  {
-    "name": "JavaScript / TypeScript",
-    "description": "Core logic, ES6+, async code",
-    "level": 70
-  },
-  {
-    "name": "Git",
-    "description": "Version control, branching, merge strategies",
-    "level": 80
+    "category": "Software Support & Methodologies",
+    "icon": "fas fa-users-cog",
+    "items": ["Agile / Scrum", "JIRA", "Technical Troubleshooting", "Python (Scripting/Automation)", "Service Desk Operations"]
   }
 ]
