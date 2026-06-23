@@ -3,19 +3,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { animate, style, transition, trigger } from '@angular/animations';
-
-interface Responsibility {
-  focus: string;
-  detail: string;
-}
-
-interface Experience {
-  company: string;
-  role: string;
-  duration: string;
-  responsibilities: Responsibility[];
-  technologies: string[];
-}
+import { Experience } from '../../models';
 
 @Component({
   selector: 'app-experience',
@@ -34,12 +22,14 @@ interface Experience {
 })
 export class ExperienceComponent implements OnInit {
   experiences: Experience[] = [];
+  loadError = false;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<Experience[]>('assets/data/experience.json').subscribe(data => {
-      this.experiences = data;
+    this.http.get<Experience[]>('assets/data/experience.json').subscribe({
+      next: data => this.experiences = data,
+      error: () => this.loadError = true
     });
   }
 }

@@ -2,12 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { animate, style, transition, trigger } from '@angular/animations';
-
-interface SoftSkill {
-  name: string;
-  description: string;
-  icon: string;
-}
+import { SoftSkill } from '../../models';
 
 @Component({
   selector: 'app-soft-skills',
@@ -26,12 +21,14 @@ interface SoftSkill {
 })
 export class SoftSkillsComponent implements OnInit {
   skills: SoftSkill[] = [];
+  loadError = false;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<SoftSkill[]>('assets/data/softskills.json').subscribe(data => {
-      this.skills = data;
+    this.http.get<SoftSkill[]>('assets/data/softskills.json').subscribe({
+      next: data => this.skills = data,
+      error: () => this.loadError = true
     });
   }
 }

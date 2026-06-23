@@ -2,21 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
-
-interface Education {
-  institution: string;
-  period: string;
-  degree: string;
-  description: string;
-}
-
-interface Certificate {
-  institution: string;
-  certificate: string;
-  obtained: string;
-  about: string;
-}
+import { Education, Certificate } from '../../models';
 
 @Component({
   selector: 'app-education',
@@ -26,22 +12,21 @@ interface Certificate {
   styleUrl: './education.component.scss'
 })
 export class EducationComponent implements OnInit {
-
-  education: Education [] = [];
+  education: Education[] = [];
   certificate: Certificate[] = [];
+  loadError = false;
 
-  constructor(
-    private http: HttpClient
-  ){}
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<Education[]>('assets/data/education.json').subscribe(data => {
-      this.education = data;
-    })
+    this.http.get<Education[]>('assets/data/education.json').subscribe({
+      next: data => this.education = data,
+      error: () => this.loadError = true
+    });
 
-    this.http.get<Certificate[]>('assets/data/certificate.json').subscribe(data => {
-      this.certificate = data;
-    })
+    this.http.get<Certificate[]>('assets/data/certificate.json').subscribe({
+      next: data => this.certificate = data,
+      error: () => this.loadError = true
+    });
   }
-
 }
